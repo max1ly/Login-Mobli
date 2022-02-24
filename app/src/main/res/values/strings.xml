@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Auth0 WebAuth KT</string>
+
+    <string name="com_auth0_client_id">90OqrIkATx2StXz64fKkOzd4xdFIFc7G</string>
+    <string name="com_auth0_domain">login.optiki.io</string>
+    <string name="com_auth0_scheme">mobli</string>
+</resources>
