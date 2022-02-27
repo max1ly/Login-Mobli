@@ -11,8 +11,9 @@ much pleasurable to work with.
 I ended up with single activity application, where Jetpack Navigation library were used for
 navigation between fragments.
 
-Dagger Hilt is used for dependency injection, this only required two modules.
-Retrofit2 and Gson libraries are for handling network calls and parsing JSON accordingly. 
+`Dagger Hilt` is used for dependency injection, this only required two modules.
+`Retrofit2` and `Gson` libraries are for handling network calls and parsing JSON accordingly.
+`AccountManager` for storing and retrieving authentication token from Android system.
 
 # What's missing
 
