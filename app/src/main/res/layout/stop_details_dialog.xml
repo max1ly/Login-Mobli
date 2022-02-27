@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ui.userprofile.StopDetailsDialog">
+
+    <TextView
+        android:id="@+id/stop_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/teal_700"
+        tools:text="Queen Street/Karangahape Road" />
+
+    <TextView
+        android:id="@+id/stop_code_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stop_code"
+        android:textSize="15sp"
+        android:textColor="@color/purple_700"
+        android:layout_marginTop="20dp"
+        tools:text="Stop code: 7063" />
+
+
+</LinearLayout>

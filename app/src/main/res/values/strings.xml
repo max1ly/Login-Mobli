@@ -4,4 +4,9 @@
     <string name="com_auth0_client_id">90OqrIkATx2StXz64fKkOzd4xdFIFc7G</string>
     <string name="com_auth0_domain">login.optiki.io</string>
     <string name="com_auth0_scheme">mobli</string>
+    <string name="userProfile">Name: %1$s\nEmail: %2$s</string>
+    <string name="stop_code">Stop code: %s</string>
+    <string name="close">OK</string>
+    <string name="account_name">Mobli Auth</string>
+    <string name="account_type">auth0.com</string>
 </resources>

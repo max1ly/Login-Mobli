@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.auth0.sample.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.auth0.sample.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment"
+            app:popUpToInclusive="false"/>
+    </fragment>
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.auth0.sample.ui.userprofile.UserProfileFragment"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" >
+        <argument
+            android:name="user_name"
+            app:argType="string" />
+        <argument
+            android:name="user_email"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="Unknown" />
+        <action
+            android:id="@+id/action_userProfileFragment_to_stopDetailsDialog"
+            app:destination="@id/stopDetailsDialog" />
+        <action
+            android:id="@+id/action_userProfileFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpToInclusive="false"/>
+    </fragment>
+    <dialog
+        android:id="@+id/stopDetailsDialog"
+        android:name="com.auth0.sample.ui.userprofile.StopDetailsDialog"
+        android:label="stop_details_dialog"
+        tools:layout="@layout/stop_details_dialog" >
+        <argument
+            android:name="stop_name"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="Unknown" />
+        <argument
+            android:name="stop_code"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="Unknown" />
+    </dialog>
+</navigation>
