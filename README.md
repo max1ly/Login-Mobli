@@ -1,6 +1,6 @@
-# Assessment for Mobli
+# Assessment for Login functionality
 
-This is a sample assessment done following the requirements described in ![Android - Coding Task.pdf](./pdf/Android%20-%20Coding%20Task.pdf).
+This is a basic implementation of login functionality that relies on authentication to grant access to a system or application
 
 # What's done
 
